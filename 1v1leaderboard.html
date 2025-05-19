@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZERO HOUR LADDER</title>
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+  <a href="index.html">
+    <img src="images/2logo.png" alt="ZHL logo" />
+  </a>
+</div>
+    <h1>ZERO HOUR LADDER</h1>
+
+    <div class="auth-buttons">
+  <button id="login-btn" type="button" aria-label="Вход">
+    <!-- Иконка замка для Входа -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M12 11c1.104 0 2-.896 2-2V7a2 2 0 10-4 0v2c0 1.104.896 2 2 2zM5 11v8a2 2 0 002 2h10a2 2 0 002-2v-8H5z" />
+    </svg>
+    Вход
+  </button>
+
+  <button id="register-btn" type="button" aria-label="Регистрация">
+    <!-- Иконка пользователя с плюсом для Регистрации -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M16 14a4 4 0 10-8 0m8 0v2a2 2 0 01-2 2H8a2 2 0 01-2-2v-2m8-6a2 2 0 11-4 0 2 2 0 014 0z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 8v4m2-2h-4" />
+    </svg>
+    Регистрация
+  </button>
+</div>
+
+</div>
+
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="has-submenu active">
+            <a href="#"><i data-lucide="file-text"></i> INFORMATION <i data-lucide="chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#"><i data-lucide="info"></i> Info</a></li>
+              <li><a href="#"><i data-lucide="smile"></i> Welcome</a></li>
+              <li><a href="#"><i data-lucide="link"></i> Invite link</a></li>
+              <li><a href="#"><i data-lucide="gift"></i> Promotions</a></li>
+              <li><a href="#"><i data-lucide="award"></i> Hall of fame</a></li>
+              <li><a href="#"><i data-lucide="megaphone"></i> Announcements</a></li>
+              <li><a href="#"><i data-lucide="external-link"></i> Links</a></li>
+              <li><a href="#"><i data-lucide="dollar-sign"></i> Prize pool</a></li>
+              <li><a href="#"><i data-lucide="handshake"></i> Sponsors</a></li>
+              <li><a href="#"><i data-lucide="refresh-ccw"></i> Update</a></li>
+              <li><a href="#"><i data-lucide="heart"></i> Donate</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu active">
+            <a href="#"><i data-lucide="swords"></i> 1v1 LADDER <i data-lucide="chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#"><i data-lucide="bar-chart"></i> Leaderboard</a></li>
+              <li><a href="#"><i data-lucide="calendar"></i> Monthly Leaderboard</a></li>
+              <li><a href="#"><i data-lucide="clipboard-list"></i> Battle logs</a></li>
+              <li><a href="#"><i data-lucide="bolt"></i> Quick Match</a></li>
+              <li><a href="#"><i data-lucide="globe"></i> 1v1 lobby rus</a></li>
+              <li><a href="#"><i data-lucide="globe"></i> 1v1 lobby eng</a></li>
+              <li><a href="#"><i data-lucide="globe"></i> 1v1 lobby arabic</a></li>
+              <li><a href="#"><i data-lucide="pie-chart"></i> Stat of players</a></li>
+              <li><a href="#"><i data-lucide="layout-grid"></i> Matchup & WinRate</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a href="#"><i data-lucide="users"></i> 2v2 LADDER <i data-lucide="chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#"><i data-lucide="bar-chart-2"></i> 2v2 leaderboard</a></li>
+              <li><a href="#"><i data-lucide="calendar-range"></i> 2v2 leaderboard monthly</a></li>
+              <li><a href="#"><i data-lucide="file-text"></i> 2v2 battle logs</a></li>
+              <li><a href="#"><i data-lucide="users"></i> 2v2 lobby</a></li>
+              <li><a href="#"><i data-lucide="pie-chart"></i> 2v2 stat of players</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu">
+            <a href="#"><i data-lucide="message-circle"></i> DISCUSSION <i data-lucide="chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#"><i data-lucide="tv"></i> Streams</a></li>
+              <li><a href="#"><i data-lucide="shield"></i> Moderators door</a></li>
+              <li><a href="#"><i data-lucide="terminal"></i> Dev room</a></li>
+              <li><a href="#"><i data-lucide="message-square"></i> Chat</a></li>
+              <li><a href="#"><i data-lucide="wifi"></i> Radmin</a></li>
+              <li><a href="#"><i data-lucide="play-circle"></i> Top replays</a></li>
+              <li><a href="#"><i data-lucide="help-circle"></i> Support</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="center">
+        <h1 class="lb-title">1v1 Leaderboard</h1>
+
+<table>
+      <tbody>
+        <tr>
+          <th class="pos">#</th>
+          <th class="player">Player</th>
+          <th class="other">Rating</th>
+          <th class="other">Games</th>
+          <th class="other">Win</th>
+          <th class="other">Lose</th>
+          <th class="other">WinRate</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><img src="images/32/uk.png" class="flag" /> ExCaL</td>
+          <td>2473</td>
+          <td>2695</td>
+          <td>2451</td>
+          <td>244</td>
+          <td>91%</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img src="images/32/ukraine.png" class="flag" /> TumStep</td>
+          <td>2395</td>
+          <td>7782</td>
+          <td>5658</td>
+          <td>2124</td>
+          <td>73%</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img src="images/32/syria.png" class="flag" /> MoJo_JoJo</td>
+          <td>2376</td>
+          <td>3714</td>
+          <td>2005</td>
+          <td>1709</td>
+          <td>54%</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img src="images/32/egypt.png" class="flag" /> Marakar</td>
+          <td>2366</td>
+          <td>4077</td>
+          <td>3492</td>
+          <td>585</td>
+          <td>86%</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><img src="images/32/iran.png" class="flag" /> Lift-TruCK^</td>
+          <td>2354</td>
+          <td>6393</td>
+          <td>4107</td>
+          <td>2286</td>
+          <td>64%</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><img src="images/32/litva.png" class="flag" /> Fargo</td>
+          <td>2256</td>
+          <td>1455</td>
+          <td>950</td>
+          <td>505</td>
+          <td>65%</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><img src="images/32/russia.png" class="flag" /> StaZzz</td>
+          <td>2203</td>
+          <td>3986</td>
+          <td>2744</td>
+          <td>1242</td>
+          <td>69%</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><img src="images/32/iran.png" class="flag" /> SR_MAD^</td>
+          <td>2148</td>
+          <td>1403</td>
+          <td>628</td>
+          <td>775</td>
+          <td>45%</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><img src="images/32/lebanon.png" class="flag" /> hsn[Leb]</td>
+          <td>2147</td>
+          <td>1102</td>
+          <td>745</td>
+          <td>357</td>
+          <td>68%</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><img src="images/32/malaysia.png" class="flag" /> ViViD</td>
+          <td>2147</td>
+          <td>485</td>
+          <td>435</td>
+          <td>50</td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td><img src="images/32/united_nations.png" class="flag" /> -Mamo</td>
+          <td>2098</td>
+          <td>916</td>
+          <td>583</td>
+          <td>333</td>
+          <td>64%</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td><img src="images/32/turkey.png" class="flag" /> druncle</td>
+          <td>2087</td>
+          <td>1517</td>
+          <td>675</td>
+          <td>842</td>
+          <td>44%</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td><img src="images/32/syria.png" class="flag" /> -NINJA</td>
+          <td>2084</td>
+          <td>2759</td>
+          <td>1212</td>
+          <td>1547</td>
+          <td>44%</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td><img src="images/32/uk.png" class="flag" /> LoGicA</td>
+          <td>2076</td>
+          <td>1084</td>
+          <td>864</td>
+          <td>220</td>
+          <td>80%</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td><img src="images/32/armenia.png" class="flag" /> Dan^[ARM]</td>
+          <td>2063</td>
+          <td>494</td>
+          <td>400</td>
+          <td>94</td>
+          <td>81%</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td><img src="images/32/iraq.png" class="flag" /> MeRRy</td>
+          <td>2061</td>
+          <td>1647</td>
+          <td>1150</td>
+          <td>497</td>
+          <td>70%</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td><img src="images/32/usa.png" class="flag" /> BoYcaH^</td>
+          <td>2048</td>
+          <td>1803</td>
+          <td>877</td>
+          <td>926</td>
+          <td>49%</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td><img src="images/32/kazakhstan.png" class="flag" /> Abuka</td>
+          <td>2044</td>
+          <td>2634</td>
+          <td>1241</td>
+          <td>1393</td>
+          <td>47%</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td><img src="images/32/syria.png" class="flag" /> RaginG_K</td>
+          <td>2031</td>
+          <td>611</td>
+          <td>336</td>
+          <td>275</td>
+          <td>55%</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td><img src="images/32/united_nations.png" class="flag" /> Miracle-</td>
+          <td>2028</td>
+          <td>89</td>
+          <td>81</td>
+          <td>8</td>
+          <td>91%</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    </div>
+    <div class="right">Правая колонка</div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ZERO HOUR LADDER. Все права защищены.</p>
+  </footer>
+
+  <!-- Форма входа -->
+  <div id="login-form" class="auth-form hidden">
+    <form>
+      <h3>Вход</h3>
+      <label for="login-username">Логин:</label>
+      <input type="text" id="login-username" name="login-username" required />
+      <label for="login-password">Пароль:</label>
+      <input type="password" id="login-password" name="login-password" required />
+      <button type="submit">Войти</button>
+      <button type="button" class="close-btn">Закрыть</button>
+    </form>
+  </div>
+
+  <!-- Форма регистрации -->
+  <div id="register-form" class="auth-form hidden">
+    <form>
+      <h3>Регистрация</h3>
+      <label for="register-username">Логин:</label>
+      <input type="text" id="register-username" name="register-username" required />
+      <label for="register-email">Email:</label>
+      <input type="email" id="register-email" name="register-email" required />
+      <label for="register-password">Пароль:</label>
+      <input type="password" id="register-password" name="register-password" required />
+      <button type="submit">Зарегистрироваться</button>
+      <button type="button" class="close-btn">Закрыть</button>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
