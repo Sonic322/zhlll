@@ -306,3 +306,74 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+/* ===================== ТАБЛИЦА ===================== */
+
+.center table {
+  margin: 20px auto;        /* Выравнивание по центру с вертикальными отступами */
+  border-collapse: collapse;
+  width: 70%;               /* Ширина таблицы (можно менять) */
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.center th, .center {
+  padding: 10px 2px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+td {
+  padding: 3px 4px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.center th {
+  background-color: #004080;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.center tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+.center th.player {
+  width: 200px;
+  text-align: left;
+  padding-left: 14px;
+}
+
+.flag {
+  width: 24px;         /* чуть меньше */
+  height: auto;        /* пропорционально */
+  vertical-align: middle; /* выравнивание по центру строки */
+  margin-right: 8px;   /* отступ справа между флагом и ником */
+}
+
+td:nth-child(2) {
+  text-align: left;
+  padding-left: 14px;
+}
+
+table th,
+table td {
+  padding: 4px 4px; /* сверху/снизу 4px, слева/справа 8px */
+}
+
+.lb-title {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #3373e2;
+  font-family: Verdana, sans-serif;
+}
