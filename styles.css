@@ -377,3 +377,9 @@ table td {
   color: #3373e2;
   font-family: Verdana, sans-serif;
 }
+
+.sidebar-nav a.active {
+  background-color: #e6d6ff; /* светло-фиолетовый фон */
+  border-radius: 6px;
+  color: #000; /* по желанию */
+}
